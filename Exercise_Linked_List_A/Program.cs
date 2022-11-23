@@ -14,6 +14,11 @@ namespace Exercise_Linked_List_A
             public string name;
             public Node next;
         }
+        class CircularList
+        {
+            Node LAST;
+
+        }
         static void Main(string[] args)
         {
         }
