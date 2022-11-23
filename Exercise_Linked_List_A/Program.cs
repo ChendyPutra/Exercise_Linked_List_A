@@ -18,6 +18,10 @@ namespace Exercise_Linked_List_A
         {
             Node LAST;
 
+            public CircularList()
+            {
+                LAST = null;
+            }
         }
         static void Main(string[] args)
         {
