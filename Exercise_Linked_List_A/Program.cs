@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -65,7 +66,20 @@ namespace Exercise_Linked_List_A
             }
             public void delete_linked_list()
             {
+                Console.WriteLine("\nDeleting Linked List : ");
 
+                LAST = null;
+                if (tail == null)
+                {
+                    Console.WriteLine("Linked list is all ready deleted, nothing to delete!!")
+                        return;
+                }
+                else
+                {
+                    tail.next(null);
+                    tail = null;
+                    Console.WriteLine("Linked list deleted succesfully!")
+                }
             }
             
         }
